@@ -57,10 +57,22 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .button(@height, @width) {
+          height: @height;
+          width: @width;
+          color: white;
+          font-size: 1.8rem;
+          background-color: @btn-bg-color;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      
+          &:hover {
+            background-color:blue;
+            color: @btn-bg-color;
       }
     }
-
     .walk-img {
       width: 46%;
       margin-left: 4%;
@@ -71,5 +83,3 @@
         border-radius: 10px;
       }
     }
-  }
-}// home
